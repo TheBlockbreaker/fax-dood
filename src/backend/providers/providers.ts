@@ -2,7 +2,7 @@ import {
   makeProviders,
   makeStandardFetcher,
   targets,
-} from "@movie-web/providers";
+} from "chesko-movie-web";
 
 import { isExtensionActiveCached } from "@/backend/extension/messaging";
 import {
