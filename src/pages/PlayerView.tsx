@@ -1,4 +1,4 @@
-import { RunOutput } from "@movie-web/providers";
+import { RunOutput } from "chesko-movie-web";
 import { useCallback, useEffect, useState } from "react";
 import {
   Navigate,
