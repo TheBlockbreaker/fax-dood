@@ -10,8 +10,8 @@
     "test": "vitest run",
     "preview": "vite preview",
     "lint": "ESLINT_USE_FLAT_CONFIG=false eslint --ext .tsx,.ts src",
-    "lint:fix": "eslint --fix --ext .tsx,.ts src",
-    "lint:report": "eslint --ext .tsx,.ts --output-file eslint_report.json --format json src",
+    "lint:fix": "ESLINT_USE_FLAT_CONFIG=false eslint --fix --ext .tsx,.ts src",
+    "lint:report": "ESLINT_USE_FLAT_CONFIG=false eslint --ext .tsx,.ts --output-file eslint_report.json --format json src",
     "preinstall": "npx -y only-allow pnpm"
   },
   "browserslist": {
