@@ -1,3 +1,5 @@
+ /* eslint-disable @typescript-eslint/no-explicit-any */
+
 import { FetchError } from "ofetch";
 
 import { formatJWMeta, mediaTypeToJW } from "./justwatch";
