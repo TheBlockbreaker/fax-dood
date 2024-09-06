@@ -1,8 +1,4 @@
-import {
-  makeProviders,
-  makeStandardFetcher,
-  targets,
-} from "chesko-movie-web";
+import { makeProviders, makeStandardFetcher, targets } from "chesko-movie-web";
 
 import { isExtensionActiveCached } from "@/backend/extension/messaging";
 import {

@@ -9,9 +9,9 @@
     "build:pwa": "cross-env VITE_PWA_ENABLED=true vite build",
     "test": "vitest run",
     "preview": "vite preview",
-    "lint": "eslint --ext .tsx,.ts src",
-    "lint:fix": "eslint --fix --ext .tsx,.ts src",
-    "lint:report": "eslint --ext .tsx,.ts --output-file eslint_report.json --format json src",
+    "lint": "eslint -c ./src/backend/metadata/getmeta.ts",
+    "lint:fix": "eslint --fix -c .tsx,.ts src",
+    "lint:report": "eslint -c .tsx,.ts --output-file eslint_report.json --format json src",
     "preinstall": "npx -y only-allow pnpm"
   },
   "browserslist": {
@@ -68,6 +68,7 @@
     "semver": "^7.5.4",
     "slugify": "^1.6.6",
     "subsrt-ts": "^2.1.2",
+    "typescript": "4.9.5",
     "zustand": "^4.4.7"
   },
   "devDependencies": {
@@ -93,8 +94,8 @@
     "@types/react-stickynode": "^4.0.3",
     "@types/react-transition-group": "^4.4.10",
     "@types/semver": "^7.5.6",
-    "@typescript-eslint/eslint-plugin": "^6.15.0",
-    "@typescript-eslint/parser": "^6.15.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.16",
     "cross-env": "^7.0.3",
@@ -121,7 +122,6 @@
     "tailwindcss": "^3.4.0",
     "tailwindcss-themer": "^4.0.0",
     "type-fest": "^4.8.3",
-    "typescript": "^5.3.3",
     "typescript-eslint": "^8.4.0",
     "vite": "^5.0.13",
     "vite-plugin-checker": "^0.6.2",
